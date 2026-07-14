@@ -1,0 +1,39 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Smart Study Planner",
+            "type": "shell",
+            "command": "javac",
+            "args": [
+                "-cp",
+                "${workspaceFolder}/lib/jcalendar-1.4.jar",
+                "-d",
+                "${workspaceFolder}/bin",
+                "${workspaceFolder}/src/studyplannerproject/*.java"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$javac",
+            "detail": "Compiles all project Java files into bin/"
+        },
+        {
+            "label": "Run Smart Study Planner",
+            "type": "shell",
+            "command": "java",
+            "args": [
+                "-cp",
+                "${workspaceFolder}/bin${pathSeparator}${workspaceFolder}/lib/jcalendar-1.4.jar",
+                "studyplannerproject.Main"
+            ],
+            "dependsOn": "Build Smart Study Planner",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "detail": "Builds then runs the app starting from LoginForm"
+        }
+    ]
+}

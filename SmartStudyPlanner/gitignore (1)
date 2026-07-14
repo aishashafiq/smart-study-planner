@@ -1,0 +1,36 @@
+# Compiled class files
+*.class
+
+# Build output
+bin/
+build/
+target/
+dist/
+out/
+
+# NetBeans leftovers (from before the VS Code migration)
+nbproject/
+nbbuild/
+nbdist/
+nb-configuration.xml
+
+# Saved application data (user-generated at runtime, not source)
+*.dat
+
+# Logs
+*.log
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# IDE/editor junk (keep .vscode/settings.json, launch.json, tasks.json tracked —
+# only ignore local machine-specific IDE state)
+.vscode/*.log
+.idea/
+*.iml
+
+# Packaged artifacts
+*.jar
+*.war
+!lib/*.jar

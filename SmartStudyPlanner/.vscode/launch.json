@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "studyplannerproject.Main",
+            "projectName": "SmartStudyPlanner_90a18410"
+        },
+        {
+            "type": "java",
+            "name": "Run Smart Study Planner",
+            "request": "launch",
+            "mainClass": "studyplannerproject.Main",
+            "projectName": "SmartStudyPlanner",
+            "classPaths": [
+                "${workspaceFolder}/bin",
+                "${workspaceFolder}/lib/jcalendar-1.4.jar"
+            ],
+            "console": "internalConsole"
+        }
+    ]
+}
